@@ -1,0 +1,25 @@
+{
+  "rdbms": "postgresql",
+  "host": "127.0.0.1",
+  "port": 5433,
+  "dbname": "cxx_test",
+  "schema": "public",
+  "user": "postgres",
+  "password": "",
+  "tables": [],
+  "relationships": {
+    "enabled": true,
+    "items": [
+      {
+        "type":"has one",
+        "original_table_name": "personal_data",
+        "original_table_alias": "personal_data",
+        "original_key": "id",
+        "target_table_name": "users",
+        "target_table_alias": "users",
+        "target_key": "personal_data_id",
+        "enable_reverse": true
+      }
+    ]
+  }
+}
